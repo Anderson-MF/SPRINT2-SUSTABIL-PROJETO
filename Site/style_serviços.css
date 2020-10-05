@@ -5,13 +5,6 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-.img2{
-    height: 500px;
-    width: 600px;
-    
-    
-}
-
 .header {
     background-image: url(../Site/img/logofelipe1.png);
     background-repeat: no-repeat;
@@ -24,14 +17,6 @@ body {
     padding-top: 20px;
     border-bottom: #B7D424 solid 5px;
 }
-
-.img{
-    background-image: url(../Site/img/logofelipe1.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
-
-}
-
 .header .nav .current a, .header span {
     color: #B7D424 ;
 }
@@ -51,21 +36,5 @@ body {
     display: inline-block;
     padding: 5px 20px 0 20px;
     
-}
-
-.showcase {
-    background-image: url(../Site/img/fundoSite.png);
-    background-repeat: no-repeat;
-    height: 884px;
-    background-size: cover;
-}
-
-.showcase h1{
-    font-size: 40px;
-    color: #ffffff;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 100px ;
-    padding-top: 200px;
 }
 
