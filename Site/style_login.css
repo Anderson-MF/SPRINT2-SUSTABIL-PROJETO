@@ -3,6 +3,7 @@
 }
 body {
     font-family: 'Oswald', sans-serif;
+    
 }
 
 .header {
@@ -36,4 +37,56 @@ body {
     display: inline-block;
     padding: 5px 20px 0 20px;
     
+}
+
+.form {
+    padding-left: 200px;
+    padding-top: 150px;
+    float: left;
+    
+}
+
+.form h1 {
+    padding-left: 30px;
+    font-size: 50px;
+}
+
+.form2 {
+    padding-right: 200px;
+    padding-top: 150px;
+    float: right;
+}
+
+.form2 h1 {
+    padding-left: 30px;
+    font-size: 50px;
+}
+
+.label {
+    padding: 0px 30px 0 30px;
+    font-size: 25px;
+}
+
+.label2 {
+    padding: 0px 30px 0 30px;
+    font-size: 25px;
+}
+.input {
+    height: 25px;
+    width: 225px;
+    margin-left: 30px;
+    display: flex;
+    box-shadow: 0px 4px 4px 4px
+    rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+.input2 {
+    height: 25px;
+    width: 225px;
+    margin-left: 30px;
+    display: flex;
+    box-shadow: 0px 4px 4px 4px
+    rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
 }
