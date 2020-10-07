@@ -90,3 +90,16 @@ body {
     rgba(0, 0, 0, 0.45);
     border-radius: 5px;
 }
+
+.btn {
+    margin-top: 30px;
+    height: 25px;
+    margin-left: 185px;
+}
+
+.btn2 {
+    margin-top: 30px;
+    height: 25px;
+    margin-left: 210px;
+}
+
