@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-image: url(../Site/img/logofelipe1.png);
+    background-image: url(../img/logofelipe1.png);
     background-repeat: no-repeat;
     background-size: 190px 150px;
     background-position-y: center;
@@ -38,26 +38,8 @@ body {
     
 }
 
-.form {
-    padding-left: 30px;
-    padding-top: 150px;
-}
-
-.label {
-    padding-left: 30px;
-}
-
-.input {
-    height: 25px;
-    width: 225px;
-    margin-left: 30px;
-    display: flex;
-    box-shadow: 0px 4px 4px 4px
-    rgba(0, 0, 0, 0.45);
-    border-radius: 5px;
-}
-
-.btn {
-    height: 25px;
-    margin-left: 200px;
+.texto p{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
 }
