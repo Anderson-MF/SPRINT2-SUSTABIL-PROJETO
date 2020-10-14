@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logofelipe1.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <button class="efeito_btn" id="btn_cadastrar" onclick="cadastrar()"><b>Cadastrar</b></button>
+            <button class="efeito_btn" id="btn_login" onclick="login()">Login</button>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="orcamento.html">ORÇAMENTO</a></li>
+                    <li><a href="sobre.html" class="atual">SOBRE NÓS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+
+            <div class="imagem">
+                <a href="index.html"> <img src="./img/logofelipe1.png" alt="" style="cursor: pointer;"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PRIMEIRA TELA(SUSTÁBIL) -->
+
+    <div class="showcase_sobre">
+        <div class="container">
+            <div class="tela_preta">
+                <h1>Temos a habilidade de ser sustentável!</h1>
+                <p>
+                    Com o sistema Sustabil <br>você poderá analisar os <br> locais que estão com <br> vazamentos e problemas com água
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SEGUNDA TELA(QUEM SOMOS) -->
+
+    <div class="showcase_quemsomos">
+        <div class="container">
+            <div class="tela_preta2">
+                <h1>Quem somos?</h1>
+                <p>
+                    Somos um projeto com <br> a premissa de melhorar os <br> locais de vazamentos na <br> região do Nordeste.​
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERCEIRA TELA (QUANDO SURGIMOS) -->
+    <div class="showcase_quandosurgimos">
+        <div class="container">
+            <div class="tela_preta4">
+                <h1>Quando surgimos?</h1>
+                <p>
+                    A sustábil surgiu em 2019 afins de resolver o problema de vazamento no nordeste, de maneira eficaz o descobrimento de vazamento e possíveis vazamentos se tornou simples e rápido com o nosso sitema. Somos uma empresa privada que se preocupa com o desperdício
+                    e com o meio ambiente.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ENTRE A SEGUNDA E A TERICEIRA(NEWS) -->
+
+    <div class="news">
+        <div class="container">
+            <h1>Receba nossas atualizações</h1>
+            <form>
+                <input placeholder="Digite seu email...">
+                <button id="enviar" class="efeito_btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- TERCEIRA TELA(VALORES) -->
+
+    <div class="valores">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/missao.png" alt="">
+                    <h3>Missão</h3>
+                    <p>
+                        Melhorar o vazamento de água das grandes metrópoles para melhorar a sustentabilidade.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/visao.png" alt="">
+                    <h3>Visão</h3>
+                    <p>
+                        Atingir o máximo de clientes possível com excelência.​
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/valores.png" alt="">
+                    <h3>Valores</h3>
+                    <p>
+                        Colaboração;​ <br> Transparência;​ <br> Organização;​ <br> Agilidade;​ <br> Inovação​.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div id="conteudo">
+                <h3>Sustábil</h3>
+                Rua Haddock Lobo, 595 - Cerqueira César <br> São Paulo - SP - Brasil <br> Todos os direitos são reservados ©
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    // FUNÇÃO PARA QUANDO APERTAR O BOTTAO CADASTRAR, IR PRA A PAGINA CADASTRAR
+    function cadastrar() { //FUNÇÃO CADASTRAR
+        window.open("cadastrar.html"); //WINDOW = PAGINA // OPEN = ABRIR, FUNÇÃO ONDE ABRE A PAGINA "CADASTRAR.HTML"
+    }
+
+    function login() { //FUNÇÃO LOGIN
+        window.open("login.html"); //COMANDO PARA ABRIR A PAGINA "LOGIN.HTML"
+    }
+</script>

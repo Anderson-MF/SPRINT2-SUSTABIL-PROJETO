@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login/Cadastre-se</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logofelipe1.png">
+</head>
+
+<body>
+    <div class="showcase_login">
+        <div class="container">
+            <div id="lado_esquerdo_login">
+
+                <a href="index.html"> <img src="img/logofelipe1.png" style="height: 200px; width: 200px;" alt=""></a>
+
+                <h3>Bem vindo de volta, por favor, entre com sua conta:</h3>
+
+                <form action="dashboard/dashboard.html" id="form_login">
+                    <input class="inp_loging" placeholder="E-mail ou Usuário" type="text" id="inp_email"> <br> <br>
+                    <input class="inp_loging" placeholder="Senha" type="password" id="inp_senha"> <br>
+                    <span>Lembar senha?</span><input type="checkbox" name="" id="lembrar_senha">
+
+
+                    <span id="esqueceu_senha">Esqueceu sua senha ?</span> <br> <br>
+
+
+                    <button class="efeito_btn" id="btn_entrar_login" onclick="entrar()">Entrar</button>
+
+                </form>
+                <button class="efeito_btn" id="btn_criar_login" onclick="criar()">Crie sua conta</button>
+
+            </div>
+
+
+
+
+            <div id="lado_direito_login">
+                <div id="tom_escuro">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function entrar() {
+        var forumalarios = form_login;
+        var email = inp_email.value;
+        var senha = inp_senha.value;
+
+
+        if (email != "admin" && senha != "123456") {
+            alert("Email e senha inválidos");
+            forumalarios.action = '';
+        } else if (email != "admin") {
+            alert("Login inválido");
+            forumalarios.action = '';
+        } else if (senha != "123456") {
+            alert("Senha inválida");
+            forumalarios.action = '';
+        }
+
+    }
+
+    function criar() {
+        window.open("cadastrar.html");
+    }
+</script>

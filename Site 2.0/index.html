@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logofelipe1.png">
+    <!--COLOCANDO O ICONE DA EMPRESA NA ABA DO SITE-->
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script src="./chartjs-exemplo-linha.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <button class="efeito_btn" id="btn_cadastrar" onclick="cadastrar()"><b>Cadastrar</b></button>
+            <button class="efeito_btn" id="btn_login" onclick="login()">Login</button>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" class="atual">INICIO</a></li>
+                    <li><a href="orcamento.html">ORÇAMENTO</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+
+            <div class="imagem">
+                <a href="index.html"> <img src="./img/logofelipe1.png" alt="" style="cursor: pointer;"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="showcase">
+        <div class="container">
+            <button class="efeito_btn" id="btn_contato" onclick="contato()">ENTRE EM CONTATO</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="showcase_2">
+        <div class="container">
+            <div id="esquerda">
+                <h2>TESTE TESTE TESTE</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores tempora porro quibusdam voluptate, corporis pariatur voluptates aperiam debitis quis tenetur totam ipsam nulla praesentium tempore possimus, distinctio eaque iusto!Velit, repellat tempora
+                    ab fugit voluptas explicabo saepe, tenetur vel dolore totam nam, eveniet dolorum animi asperiores quia veniam repudiandae odio voluptates adipisci corrupti nemo? Iste recusandae qui libero dolorem.
+
+                </p>
+
+            </div>
+
+
+            <div id="direita">
+
+                <div class="grafico">
+                    <canvas id="c_grafico"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="showcase_3">
+        <div class="container">
+            <div id="conteudo_pagina_3">
+                <h1>TENHA UMA FÁCIL ANÁLISE DE SUAS INFORMAÇÕES E FAÇA MELHORES DECISÕES ​</h1>
+                <span>UTILIZE DE GRÁFICOS PARA MELHOR <br> VISUALIZAÇÃO E FAZER UMA MELHOR <br> ANÁLISE DE DADOS​</span><br>
+                <p>
+                    .Gráficos de ganhos​ <br> .Gráficos de umidade e vazamentos <br>​ .Relatórios
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="showcase_4">
+        <div class="container">
+            <div id="esquerda">
+                <img src="img/sensores_esquerda.png" alt="">
+            </div>
+
+            <div id="direita">
+                <h1>TENHA UMA FÁCIL ANÁLISE DE SUAS INFROMAÇÕES E FAÇA MELHORES DECISÕES</h1>
+                <span>UTILIZE DE GRÁFICOS PARA MELHOR <br> VISUALIZAÇÃO E FAZER UMA MELHOR <br> ANÁLISE DE DADOS​</span>
+                <p>
+                    .Gráficos de ganhos​ <br> .Gráficos de umidade e vazamentos <br>​ .Relatórios
+                </p>
+
+                <button class="efeito_btn" id="btn_contato_showcase4" onclick="contato()">ENTRE EM CONTATO</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div id="conteudo">
+                <h3>Sustábil</h3>
+                Rua Haddock Lobo, 595 - Cerqueira César <br> São Paulo - SP - Brasil <br> Todos os direitos são reservados ©
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    // FUNÇÃO PARA QUANDO APERTAR O BOTTAO CADASTRAR, IR PRA A PAGINA CADASTRAR
+    function cadastrar() { //FUNÇÃO CADASTRAR
+        window.open("cadastrar.html"); //WINDOW = PAGINA // OPEN = ABRIR, FUNÇÃO ONDE ABRE A PAGINA "CADASTRAR.HTML"
+    }
+
+    function login() { //FUNÇÃO LOGIN
+        window.open("login.html"); //COMANDO PARA ABRIR A PAGINA "LOGIN.HTML"
+    }
+
+    function contato() { //FUNÇÃO CONTATO
+        window.open("contato.html"); //COMANDO PARA ABRIR A PAGINA "CONTATO.HTML"
+    }
+</script>

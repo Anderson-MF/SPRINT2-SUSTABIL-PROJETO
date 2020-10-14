@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logofelipe1.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <button class="efeito_btn" id="btn_cadastrar" onclick="cadastrar()"><b>Cadastrar</b></button>
+            <button class="efeito_btn" id="btn_login" onclick="login()">Login</button>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="orcamento.html" class="atual">ORÇAMENTO</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+
+            <div class="imagem">
+                <a href="index.html"> <img src="./img/logofelipe1.png" alt="" style="cursor: pointer;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="showcase_simulador">
+        <div class="container">
+            <div class="tela_preta6">
+                <h1>FAÇA SEU ORÇAMENTO AQUI!</h1>
+                <p>
+                    Insira a área do seu local M²
+                </p>
+                <input type="number" id="ipn_simulador" placeholder="insira os metros"><br><br>
+                <button id="btn_simulador" onclick="calcular()">Calcule</button><br><br>
+                <div id="div_teste"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div id="conteudo">
+                <h3>Sustábil</h3>
+                Rua Haddock Lobo, 595 - Cerqueira César <br> São Paulo - SP - Brasil <br> Todos os direitos são reservados ©
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            var estimativa = ipn_simulador.value * 200000;
+            div_teste.innerHTML = ` <b>Valor estimado em reais, gerado pelo desperdício de água = <b><u>R$${estimativa.toFixed(2)}</u><br><br>
+              Valor da instalação = <u>R$${(ipn_simulador.value * 450000).toFixed(2)}</u> <br><br>
+              Valor mensal para analisar o sistema e informar pontos específicos onde existem vazamentos = <u>R$${(ipn_simulador.value * 17000).toFixed(2)}</u><br><br> 
+            Um investimento a médio longo prazo que faz total diferença ecologica e economicamente!!!</b>`;
+        }
+    </script>

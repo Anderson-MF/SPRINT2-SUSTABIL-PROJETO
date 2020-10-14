@@ -1,0 +1,709 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #E7E6E5;
+}
+
+.container {
+    width: 100%;
+    margin: 0 0;
+    /* height: 100%; */
+    padding-right: 0px;
+}
+
+.header .container {
+    min-height: 70px;
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    border-bottom: #1E90FF 2px solid;
+    position: fixed;
+}
+
+.header img {
+    width: 250px;
+    height: 150px;
+    padding-left: 70px;
+    margin-top: -30px;
+}
+
+
+/* NAVEGAÇÃO DO SITE */
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul {
+    margin: 0 auto;
+    padding: 22px;
+}
+
+.nav {
+    margin-top: 0px;
+    float: right;
+    margin-right: 100px;
+}
+
+a:hover,
+.nav {
+    /*DAR COR AO PASSAR O MOUSE SOBRE O ELEMENTO*/
+    color: aquamarine !important;
+    transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98), border-color 0.5s cubic-bezier(0.06, 0.81, 0, 0.98);
+}
+
+.header .nav a.atual {
+    /*ITEM DE MENU SELECIONADO*/
+    color: white;
+    font-weight: bold;
+}
+
+
+/* BOTÕES DE LOGIN E CADASTRAR */
+
+#btn_login {
+    background-color: #1E90FF;
+    float: right;
+    border: none;
+    width: 100px;
+    height: 70px;
+    font-size: 18px;
+}
+
+#btn_cadastrar {
+    background-color: #00BFFF;
+    float: right;
+    border: none;
+    width: 160px;
+    height: 70px;
+    font-size: 18px;
+}
+
+.efeito_btn {
+    background-color: #00BFFF;
+    cursor: pointer;
+    transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98), border-color 0.5s cubic-bezier(0.06, 0.81, 0, 0.98);
+    display: inline-block;
+}
+
+#btn_login:hover {
+    background: #00FFFF;
+}
+
+#btn_cadastrar:hover {
+    background-color: #1E90FF;
+}
+
+
+/* PRIMEIRA TELA DO INDEX(INICIAL) */
+
+.showcase {
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 630px;
+    text-align: center;
+    color: white;
+}
+
+.showcase .container {
+    padding-top: 120px;
+    width: 700px;
+    margin-left: 300px;
+}
+
+.showcase h1 {
+    margin-top: 0px;
+    font-size: 35;
+    color: white;
+    text-align: center;
+}
+
+.showcase p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#btn_contato {
+    background: #00BFFF;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 400px;
+    margin-left: 160px;
+}
+
+#btn_contato:hover {
+    background-color: #00BFFF;
+    color: #232323;
+    border: black 2px solid;
+    font-weight: bold;
+}
+
+.showcase .container img {
+    border-radius: 200px;
+    width: 250px;
+    border: black 3px solid;
+}
+
+
+/* SEGUNDA TELA DO INDEX(INICIO) */
+
+.showcase_2 {
+    width: 100%;
+    height: 540px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 60px;
+    background: linear-gradient(to right, blue, aquamarine);
+}
+
+.showcase_2 h2 {
+    font-size: 45px;
+}
+
+.showcase_2 .container #esquerda {
+    height: 550px;
+    width: 400px;
+    margin-top: -40px;
+    float: left;
+    margin-left: 80px;
+}
+
+#esquerda h2,
+#esquerda p {
+    color: white;
+}
+
+#esquerda img {
+    width: 270px;
+    height: 180px;
+    border-radius: 300px;
+    border: black 3px solid;
+}
+
+.showcase_2 .container #meio {
+    height: 600px;
+    width: 380px;
+    margin-left: 10px;
+    float: left;
+}
+
+.showcase_2 .container #direita {
+    height: 530px;
+    width: 600px;
+    margin-right: 80px;
+    float: right;
+}
+
+#direita img {
+    width: 270px;
+    height: 180px;
+    border-radius: 300px;
+    border: black 3px solid;
+}
+
+.showcase_2 .grafico {
+    width: 100%;
+    height: 350px;
+    background: #232323;
+    border-radius: 5px;
+}
+
+
+/* TERCEIRA TELA DO INDEX(INICIO) */
+
+.showcase_3 {
+    width: 100%;
+    height: 620px;
+    display: inline-block;
+    padding-top: 50px;
+    background-image: url(../img/negocio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5px;
+}
+
+.showcase_3 .container {
+    margin-left: 30px;
+    width: 400px;
+    color: white;
+}
+
+.showcase_3 .container h1 {
+    width: 600px;
+    margin: 0px;
+    color: white;
+    font-size: 44px;
+}
+
+.showcase_3 .container span {
+    font-weight: bold;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.showcase_3 .container p {
+    font-size: 20px;
+}
+
+.showcase_3 .container #conteudo_pagina_3 {
+    width: 600px;
+}
+
+
+/* QUARTA TELA DO INDEX(INICIO) */
+
+.showcase_4 {
+    width: 100%;
+    height: 550px;
+    padding-top: 40px;
+}
+
+.showcase_4 .container #direita {
+    float: right;
+}
+
+.showcase_4 .container #direita h1 {
+    width: 600px;
+    margin: 0;
+    color: #232323;
+    font-size: 44px;
+}
+
+.showcase_4 .container #direita span {
+    font-weight: bold;
+    color: #232323;
+    font-size: 24px;
+}
+
+.showcase_4 .container #direita p {
+    font-size: 20px;
+    color: #232323;
+}
+
+.showcase_4 .container #esquerda {
+    float: left;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+
+.showcase_4 .container #esquerda img {
+    border: 0;
+    border-radius: 0;
+    width: 650px;
+    height: 450px;
+}
+
+#btn_contato_showcase4 {
+    background: #00BFFF;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+#btn_contato_showcase4:hover {
+    background-color: #00BFFF;
+    color: black;
+    border: black 2px solid;
+    font-weight: bold;
+}
+
+
+/* footer (rodapé) */
+
+.footer .container {
+    background-color: #232323;
+    width: 100% !important;
+    height: 150px;
+    border-top: #1E90FF 5px solid;
+    text-align: center;
+}
+
+.footer .container #conteudo {
+    color: white;
+}
+
+
+/* PAGINA SOBRE */
+
+
+/* SUSTÁBIL */
+
+.tela_preta {
+    background-color: rgba(0, 0, 0, 0.802);
+    width: 100%;
+    height: 490px;
+    padding-top: 140px;
+}
+
+.tela_preta h1 {
+    color: white;
+    margin-left: 100px;
+    font-size: 58px;
+}
+
+.tela_preta p {
+    margin-left: 300px;
+    color: white;
+    font-size: 34px;
+}
+
+.showcase_sobre {
+    background-image: url(../img/mapa\ vazamentos.jpg);
+    width: 100%;
+    height: 630px;
+}
+
+
+/* QUEM SOMOS */
+
+.showcase_quemsomos {
+    background-color: blue;
+    width: 100%;
+    height: 630px;
+}
+
+.tela_preta2 {
+    background-color: rgba(0, 0, 0, 0.598);
+    width: 100%;
+    height: 530px;
+    padding-top: 100px;
+}
+
+.tela_preta2 h1 {
+    color: white;
+    font-size: 58px;
+    margin-left: 800px;
+}
+
+.tela_preta2 p {
+    color: white;
+    font-size: 34px;
+    margin-left: 640px;
+}
+
+.showcase_quandosurgimos {
+    background-color: blue;
+    width: 100%;
+    height: 630px;
+}
+
+.tela_preta4 {
+    background-color: blue;
+    width: 100%;
+    height: 530px;
+    padding-top: 100px;
+}
+
+.tela_preta4 h1 {
+    color: white;
+    font-size: 58px;
+    margin-left: 800px;
+}
+
+.tela_preta4 p {
+    color: white;
+    font-size: 34px;
+    margin-left: 640px;
+}
+
+
+/* ENTRA AS PAGINAS(NEWS) */
+
+.news {
+    width: 100%;
+    height: 100px;
+    background-color: #232323;
+    margin-top: -55px;
+}
+
+.news h1 {
+    float: left;
+    color: white;
+    margin-left: 25px;
+}
+
+.news form {
+    float: right;
+    margin-top: 34px;
+}
+
+.news input {
+    height: 25px;
+    width: 250px;
+}
+
+#enviar {
+    border: none;
+    height: 31px;
+    color: white;
+    margin-right: 25px;
+}
+
+
+/* VALORES */
+
+.valores {
+    /* padding: 60px 0; */
+    margin-top: 40px;
+    text-align: center;
+    width: 900px;
+    height: 430px;
+    margin-left: 150px;
+}
+
+.valores ul {
+    list-style: none;
+    display: flex;
+}
+
+.valores ul li {
+    margin-left: 140px;
+}
+
+.valores img {
+    width: 140px;
+}
+
+.valores .container {
+    margin-left: 100px;
+}
+
+.valores h3 {
+    font-size: 24px;
+}
+
+.valores p {
+    font-size: 18px;
+}
+
+
+/* TELA CONTATO */
+
+.showcase_contato {
+    background-image: url(../img/gif_time.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 575px;
+}
+
+.tela_preta3 {
+    background-color: rgba(0, 0, 0, 0.809);
+    width: 100%;
+    height: 500px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.tela_preta3 h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.tela_preta3 input {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border: white 5px solid;
+    color: white;
+    height: 35px;
+    width: 600px;
+    font-size: 18px;
+}
+
+.tela_preta3 ::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tela_preta3 #inp_mensagem {
+    height: 120px;
+}
+
+.tela_preta3 #btn_enviar_contato {
+    border: 0;
+    width: 200px;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    border: white 3px solid;
+}
+
+#btn_enviar_contato:hover {
+    background-color: rgb(255, 255, 255);
+    color: #232323;
+    border: rgb(108, 108, 255) 3px solid;
+    font-weight: bold;
+}
+
+
+/* TELA DE LOGIN */
+
+.showcase_login {
+    width: 100%;
+    height: 527px;
+}
+
+.showcase_login .container {
+    width: 1100px;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: 120px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.showcase_login .container #lado_esquerdo_login {
+    width: 550px;
+    height: 480px;
+    background-color: #c0c0c0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#lado_esquerdo_login img {
+    width: 120px;
+    height: 120px;
+}
+
+#lado_esquerdo_login .inp_loging {
+    width: 300px;
+    height: 25px;
+    border: #5c5858 0.2px solid;
+    text-align: center;
+}
+
+#lado_esquerdo_login ::placeholder {
+    text-align: center;
+}
+
+#lado_esquerdo_login span {
+    font-size: 12px;
+}
+
+#lado_esquerdo_login #lembrar_senha {
+    margin-right: 80px;
+}
+
+#lado_esquerdo_login #btn_entrar_login {
+    border: none;
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 161, 161);
+    float: left;
+    margin-left: 125px;
+}
+
+#lado_esquerdo_login #btn_criar_login {
+    border: none;
+    width: 120px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 161, 161);
+    margin-left: -50px;
+}
+
+#lado_esquerdo_login #btn_criar_login:hover {
+    background-color: rgb(18, 107, 107);
+    color: white;
+    font-weight: bold;
+}
+
+#lado_esquerdo_login #btn_entrar_login:hover {
+    background-color: rgb(10, 59, 59);
+    color: white;
+    font-weight: bold;
+}
+
+.showcase_login .container #lado_direito_login {
+    width: 550px;
+    height: 500px;
+    background-image: url(../img/cidade.jpg);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: right;
+}
+
+#lado_direito_login #tom_escuro {
+    width: 550px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.414);
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* TELA DE ORÇAMENTO */
+
+.showcase_simulador {
+    background-color: blue;
+    width: 100%;
+    height: 630px;
+}
+
+.tela_preta6 {
+    background-color: rgba(0, 0, 0, 0.802);
+    width: 100%;
+    height: 490px;
+    padding-top: 140px;
+}
+
+.showcase_simulador h1 {
+    color: whitesmoke;
+    margin-left: 500px;
+    margin-top: 70px;
+}
+
+.showcase_simulador p {
+    color: white;
+    margin-left: 610px;
+}
+
+.showcase_simulador #ipn_simulador {
+    margin-left: 630px;
+    border-radius: 4px;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 160px;
+    height: 25px;
+}
+
+.showcase_simulador #btn_simulador {
+    margin-left: 665px;
+    cursor: pointer;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+}
+
+.showcase_simulador #div_teste {
+    color: red;
+    margin-left: 450px;
+}
