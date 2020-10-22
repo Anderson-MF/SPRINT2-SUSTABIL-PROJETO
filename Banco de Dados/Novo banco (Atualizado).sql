@@ -26,3 +26,10 @@ senha varchar(50),
 primeiroNome varchar(50),
 sobrenome varchar(50)
 )auto_increment = 10000;
+
+create table sensor(
+idsensor int primary key auto_increment,
+media decimal(2,2) check(media>=20 and media <=80),
+fksensor int,
+foreign key(fksensor) references empresa(idempresa)
+)
