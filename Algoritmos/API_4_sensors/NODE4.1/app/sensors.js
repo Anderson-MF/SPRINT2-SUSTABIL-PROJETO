@@ -37,7 +37,7 @@ function dht11(options){
     minTemperature = options.minTemp;
     maxTemperature = options.maxTemp;
 
-    if (minHumidity < 20 || maxHumidity > 100) {
+    if (minHumidity < 20 || maxHumidity > 80) {
         throw new Error('Os valores minímos e máximos para umidade são 20% e 100% respectivamente.')
     }
 
